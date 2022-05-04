@@ -1,9 +1,8 @@
 package com.unava.dia.validationsample.domain.use_case
 
 import android.util.Patterns
-import com.unava.dia.validationexample.domain.use_case.ValidationResult
 
-class ValiadateEmail {
+class ValidateEmail {
     fun execute(email: String) : ValidationResult {
         if(email.isBlank()) {
             return ValidationResult(
@@ -11,7 +10,7 @@ class ValiadateEmail {
                 errorMessage = "The email cant be blank"
             )
         }
-        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches) {
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             return ValidationResult(
                 successful = false,
                 errorMessage = "This email is not valid"

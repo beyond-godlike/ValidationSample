@@ -1,10 +1,10 @@
-package com.unava.dia.validationexample.domain.use_case
+package com.unava.dia.validationsample.domain.use_case
 
 class ValidateRepeaterPassword {
     fun execute(password: String, repeatedPassword: String) : ValidationResult {
-        if(password != repearedPassword) {
+        if(password != repeatedPassword) {
             return ValidationResult(
-                successfull = false,
+                successful = false,
                 errorMessage = "The password doesnt match"
             )
         }

@@ -1,7 +1,5 @@
 package com.unava.dia.validationsample.domain.use_case
 
-import com.unava.dia.validationexample.domain.use_case.ValidationResult
-
 class ValidatePassword {
     fun execute(password: String) : ValidationResult {
         if(password.length < 8) {

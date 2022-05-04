@@ -1,4 +1,4 @@
-package com.unava.dia.validationexample.domain.use_case
+package com.unava.dia.validationsample.domain.use_case
 
 class ValidateTerms {
     fun execute(acceptedTerms: Boolean) : ValidationResult {
